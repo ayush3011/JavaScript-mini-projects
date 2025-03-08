@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+              // factorial using for loop
+      let num = prompt("enter number to calculate factorial using for loop");
+      let fact = 1;
+
+      for (let i = num; i >= 1; i--){
+          fact *= i;
+      }
+
+      alert(`factorial is ${fact}`);
+
+      // factorial using reduce method
+      const factorial = (x, y) => {
+          return x * y;
+      }
+
+      let num2 = prompt("enter number to calculate factorial using reduce method");
+      let arr = [];
+      for (let i = 1; i <= num2; i++){
+          arr.push(i);
+      }
+      let fact2 = arr.reduce(factorial);
+      alert(`factorial of number ${fact2}`);
+    </script>
+  </body>
+</html>

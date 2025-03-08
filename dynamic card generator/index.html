@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Card Generator</title>
+    <style>
+      .container {
+        margin: auto;
+        padding: 20px;
+        width: 80vw;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        gap: 10px;
+        margin: 10px 0;
+        background-color: black;
+        padding: 8px;
+        color: white;
+        border-radius: 10px;
+      }
+      .thumbnail {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+      }
+      .thumbnail img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .duration {
+        position: absolute;
+        z-index: 10;
+        background-color: rgb(13 18 16 / 72%);
+        bottom: 5px;
+        right: 5px;
+        border-radius: 5px;
+        padding: 2px 5px;
+      }
+      .context h2{
+        margin: 5px 0;
+        font-size: 1.2rem;
+        color: white;
+      }
+      .info {
+        display: flex;
+        gap: 15px;
+        color: grey;
+        font-size: 0.9rem;
+      }
+      .info span{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
